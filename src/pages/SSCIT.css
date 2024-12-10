@@ -1,0 +1,70 @@
+/* CSS in styles.css */
+
+/* Neon Text Effects */
+.text-neon-green {
+    color: #39ff14;
+    text-shadow: 0 0 5px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
+  }
+  .text-neon-orange {
+    color: #ff8303;
+    text-shadow: 0 0 5px #ff8303, 0 0 20px #ff8303, 0 0 40px #ff8303;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 2s ease-in;
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 5px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
+    }
+    50% {
+      text-shadow: 0 0 10px #39ff14, 0 0 30px #39ff14, 0 0 60px #39ff14;
+    }
+  }
+  .animate-glow {
+    animation: glow 3s infinite;
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-slideInUp {
+    animation: slideInUp 1.5s ease-out;
+  }
+  
+  @keyframes type {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .animate-type {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: type 4s steps(40, end);
+  }
+  
+  /* Box Shadow for Buttons */
+  .shadow-neon {
+    box-shadow: 0 0 5px #39ff14, 0 0 20px #39ff14;
+  }
