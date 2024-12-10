@@ -4,13 +4,7 @@ import {getAuth, GoogleAuthProvider} from 'firebase/auth';
 import {getStorage} from 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyByNRdPmkRfBojyOLIUQHe__hnYAzI3SU8",
-    authDomain: "coding-a3a9f.firebaseapp.com",
-    projectId: "coding-a3a9f",
-    storageBucket: "coding-a3a9f.firebasestorage.app",
-    messagingSenderId: "314332918835",
-    appId: "1:314332918835:web:7fa9243ae1ee99a7f89f46",
-    measurementId: "G-LNGC706451"
+  // your configuration
 };
 
 const app = initializeApp(firebaseConfig);
